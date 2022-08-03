@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'typewriter';
+    src: url('/css/veteran_typewriter-webfont.woff') format('woff2'),
+         url('/css/veteran_typewriter-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    --plumpink-low: rgba(219, 126, 126, 0.445);
+    --plumpink-full: rgb(218, 108, 108);
+    --plumpink-lower:  rgba(218, 108, 108, 0.247);
+
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    background-color: var(--plumpink-low);
+}
+
+img {
+    width: 40rem;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    gap: 20px;
+    font-family: 'typewriter';
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    height: 100vh;
+    width: 48vw;
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+
+h1 img {
+    background-color: var(--plumpink-full);
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px var(--plumpink-lower);
+
+}
+
+form,
+ p {
+    font-family: monospace;
+ }
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#icon {
+    position: absolute;
+    top: 20%;
+    width: 40rem;
+    height: 15rem;
+    text-align: center;
+    padding: 25px;
+    background: var(--plumpink-lower);
+    color: rgb(253, 247, 247);
+   
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--plumpink-full);
+    box-shadow: 1px 1px 1px 1px var(--plumpink-low);
+    padding: 2px;
+}
+
+a:hover {
+    box-shadow: inset 1px 1px 1px 1px var(--plumpink-low);
+}
+
+#bottomP {
+    margin-left: 60px;
+    align-self: flex-start;
+}
+
+input::placeholder {
+    color: var(--plumpink-full);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 1rem 0 1.5rem;
+    width: 90%;
+}
+
+form input {
+    display: block;
+    border: 1px solid var(--plumpink-lower);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+form label {
+    display: block;
+    color: var(--plumpink-full);
+    outline: 0;
+    width: 40%;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+fieldset {
+    position: relative;
+    border: 0;
+    box-shadow: 2px 2px 2px 2px var(--plumpink-low);
+    padding: 2rem;
+    color:var(--plumpink-full);
+    line-height: 1rem;
+    width: 80%;
+    /* height: 40vh; */
+}
