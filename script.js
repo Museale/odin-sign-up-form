@@ -14,26 +14,3 @@ function onChange () {
     } 
 
     }
-
-    // const firstname = document.querySelector('[name=first_name]');
-    //     firstname.addEventListener('invalid', () => {
-    //     firstname.setCustomValidity('Please enter your first name.');
-    //     }, once,true);
-
-    // const lastname = document.querySelector('[name=last_name]');
-    //     lastname.addEventListener('invalid', () => {
-    //     lastname.setCustomValidity('Please enter your last name.');
-    //     }, once,true);
-
-    //     const email = document.querySelector('[name=user_email]');
-    //     email.addEventListener('invalid', () => {
-    //     email.setCustomValidity('Please enter your email.');
-    //     });
-
-
-        // allfields.addEventListener('invalid', (e) => {
-        //     let inputfield = e.target;
-        //     inputfield.setCustomValidity('Please enter your ${e.target.value}');
-        // });
-
-
