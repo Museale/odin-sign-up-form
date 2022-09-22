@@ -21,48 +21,48 @@
      
     </div>
     
-<div id="flex-container"><form action="#">
+<div id="flex-container">
    
     <h2>The Final Frontier</h2>
-    <p>Sign up and join our expedition to explore the vast and unseen universe which enfolds us all. We may not have Picard on our side, but we have his ideology. <br>
-        <em>This is not a real online service.</em></p>
+    <p>Sign up and join our expedition to explore the vast and unseen universe which enfolds us all. We may not have Picard on our side, but we have his ideology. <br> <br>
+        <em>This is not a real online service.</em></p><br>
+
+        <form action="#">
 
      
 
-                             <div id="names" class="input">
-    
-                                        <span>
-                                            <label for="firstname">FIRST NAME</label>
-                                            <input type="text" name="first_name" id="firstname"  pattern="^[\p{L}]${1,48}" title="Please write your first name" required>
-                                        </span> 
-                                        <span>
-                                            <label for="lastname">LAST NAME</label>
-                                            <input type="text" name="last_name" id="lastname" pattern="^[\p{L}]${1,48}" required>
-                                        </span>
-                             </div>
-                             <div id="contact" class="input">
-    
-                                        <span>
-                                            <label for="email">EMAIL</label>
-                                            <input type="email" name="user_email" id="email" required>
-    
-                                        </span>
-                                        <span>
-                                            <label for="tel">PHONE NUMBER</label>
-                                            <input type="text" name="user_tel" id="tel" pattern="[0-9]{8,12}" required>
-                                        </span>
-                            </div>
-    
-                                    <div id="pwd" class="input">
-                                        <span>
-                                            <label for="password">PASSWORD</label>
-                                            <input type="password" name="user_password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="onChange()" required>
-                                        </span>
+                             <div id="inputfields">
+                                 <div id="names" class="input">
                                             <span>
-                                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                                            <input type="password" name="user_confirm_password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="onChange()" required>
-                                        </span>
-                                    </div>
+                                                <label for="firstname">FIRST NAME</label>
+                                                <input type="text" name="first_name" id="firstname"  pattern="^[\p{L}]${1,48}" title="Please write your first name" required>
+                                            </span>
+                                            <span>
+                                                <label for="lastname">LAST NAME</label>
+                                                <input type="text" name="last_name" id="lastname" pattern="^[\p{L}]${1,48}" required>
+                                            </span>
+                                 </div>
+                                 <div id="contact" class="input">
+                                            <span>
+                                                <label for="email">EMAIL</label>
+                                                <input type="email" name="user_email" id="email" required>
+                                            </span>
+                                            <span>
+                                                <label for="tel">PHONE NUMBER</label>
+                                                <input type="text" name="user_tel" id="tel" pattern="[0-9]{8,12}" required>
+                                            </span>
+                                                             </div>
+                                        <div id="pwd" class="input">
+                                            <span>
+                                                <label for="password">PASSWORD</label>
+                                                <input type="password" name="user_password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="onChange()" required>
+                                            </span>
+                                                <span>
+                                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                                <input type="password" name="user_confirm_password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="onChange()" required>
+                                            </span>
+                                        </div>
+                             </div>
                                     <div id="sign-up">
                                         <span>
                                             <label for="submit-btn">Sign up</label>

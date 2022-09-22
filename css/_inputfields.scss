@@ -2,7 +2,12 @@
 form {
     @include flex-clm-wrap;
 }
+#inputfields {
+    width: 100%;
 
+
+
+}
 .input {
     display: flex;
     flex-flow: row wrap;

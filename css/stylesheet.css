@@ -52,7 +52,7 @@ label[for="submit-btn"] {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(17, 11, 2, 0.24);
-  margin-top: 220px;
+  margin-top: 180px;
   padding: 1rem;
 }
 
@@ -88,6 +88,10 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+
+#inputfields {
+  width: 100%;
 }
 
 .input {
@@ -203,5 +207,7 @@ label {
 form {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+  padding: 1rem;
+  width: 100%;
 }
 /*# sourceMappingURL=stylesheet.css.map */
