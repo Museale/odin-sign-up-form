@@ -2,8 +2,9 @@
     width: 37vw;
     height: 100vh;
     background-image:url(./NGC3576_Willocks_960.jpg);
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-position: center;
+
 }
 
 .logo {
@@ -13,6 +14,7 @@
     background-color: rgba(17, 11, 2, 0.24);
     margin-top: 180px;
     padding: 1rem;    
+
 }
 
 .svg-logo {
@@ -23,7 +25,7 @@
 
 @media screen and(max-width: 1000px) {
     .image {
-       visibility: collapse;
+       visibility: hidden;
        width: 0px;
        padding: 0;
        margin: 0;
@@ -31,15 +33,35 @@
 
     body {
         background-image: url(./NGC3576_Willocks_960.jpg);
-        width: 100%;
+        background-repeat: repeat;
+        width: 80vw;
+        height: 120vh;
     }
 
     #flex-container {
-        background-color: rgba(7, 107, 138, 0.24);
+        // background-color: rgba(7, 107, 138, 0.24);
+        
         color:white;
-        margin-left: auto;
-    }
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        top: 0;
+        width: 100vw;
 
+    }
+    
+    #inputfields {
+        margin: 0;
+        padding: 0;
+
+    }
+    .input, label, input, form {
+        margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
 }
 

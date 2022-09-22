@@ -64,19 +64,43 @@ label[for="submit-btn"] {
 
 @media screen and (max-width: 1000px) {
   .image {
-    visibility: collapse;
+    visibility: hidden;
     width: 0px;
     padding: 0;
     margin: 0;
   }
   body {
     background-image: url(./NGC3576_Willocks_960.jpg);
-    width: 100%;
+    background-repeat: repeat;
+    width: 80vw;
+    height: 120vh;
   }
   #flex-container {
-    background-color: rgba(7, 107, 138, 0.24);
     color: white;
-    margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    padding: 0;
+    top: 0;
+    width: 100vw;
+  }
+  #inputfields {
+    margin: 0;
+    padding: 0;
+  }
+  .input, label, input, form {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
