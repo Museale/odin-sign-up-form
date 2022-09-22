@@ -4,68 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/normalize.css/normalize.csss">
     <script src="script.js" defer></script>
-    <title>Sign-up-form</title>
+    <title>Odin Sign-up form</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="image">
+        <div class="logo">
+
+    <img src="./css/svg-path.svg" class="svg-logo">
+    <h1>SPACE</h1>
+   </div>
+      
+     
+    </div>
     
-              <img id="icon" src="/css/svg-path.svg" alt="logo">
-        </div>
-        <img src="css/pexels-rfstudio-3843292.jpg" alt="girl with flowers in her hair">
-    </div>
-    <div>
-        
-        <div id="right-container">
-        
-            <h1>Focus AI <img src="/css/svg-path.svg"></h1>
-            <p>
-               Join us today.<br>
-            Create an account and let AI <strong>shape</strong> your future. <br> <em>THIS IS NOT A REAL ONLINE SERVICE.</em>
-            </p>
+<div id="flex-container"><form action="#">
+   
+    <h2>The Final Frontier</h2>
+    <p>Sign up and join our expedition to explore the vast and unseen universe which enfolds us all. We may not have Picard on our side, but we have his ideology. <br>
+        <em>This is not a real online service.</em></p>
+
+     
+
+                             <div id="names" class="input">
+    
+                                        <span>
+                                            <label for="firstname">FIRST NAME</label>
+                                            <input type="text" name="first_name" id="firstname"  pattern="^[\p{L}]${1,48}" title="Please write your first name" required>
+                                        </span> 
+                                        <span>
+                                            <label for="lastname">LAST NAME</label>
+                                            <input type="text" name="last_name" id="lastname" pattern="^[\p{L}]${1,48}" required>
+                                        </span>
+                             </div>
+                             <div id="contact" class="input">
+    
+                                        <span>
+                                            <label for="email">EMAIL</label>
+                                            <input type="email" name="user_email" id="email" required>
+    
+                                        </span>
+                                        <span>
+                                            <label for="tel">PHONE NUMBER</label>
+                                            <input type="text" name="user_tel" id="tel" pattern="[0-9]{8,12}" required>
+                                        </span>
+                            </div>
+    
+                                    <div id="pwd" class="input">
+                                        <span>
+                                            <label for="password">PASSWORD</label>
+                                            <input type="password" name="user_password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="onChange()" required>
+                                        </span>
+                                            <span>
+                                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                                            <input type="password" name="user_confirm_password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="onChange()" required>
+                                        </span>
+                                    </div>
+                                    <div id="sign-up">
+                                        <span>
+                                            <label for="submit-btn">Sign up</label>
+                                            <input type="submit" name="submit" id="submit-btn" value="Sign up now" >
+                                        </span>
+                                    </div>
+
+                                    
        
-        <div id="form-container">
-        <form action="" method="">
-            <fieldset>
-                <legend>User information <span aria-label="required">*</span></legend>
-                    <section id="names">
-        
-                        <label for="firstname" >First Name:</label>
-                            <input type="text" id="first_name" name="firstname" placeholder="Name" required>
-        
-                        <label for="lastname">Last Name:</label>
-                            <input type="text" name="last_name" id="lastname" placeholder="Nameson" required>
-                    </section>
-            <section id="contact">
-                <label for="email">Email:</label>
-                    <input type="email" name="user_email" id="user-email" placeholder="email@example.com" required>
-        
-                <label for="phone">Phone:</label>
-                    <input type="tel" name="user_tel" id="telephone" placeholder="## ### ## ###" required>
-            </section>
-            <section id="password">
-                <label for="password">Password:</label>
-                <input type="password" id="pwd" name="user_password" required>
-                <label for="repeat-password"> Repeat Password:</label>                
-                <input type="password" id="validatepwd" name="validated_user_password" required>
-            </section>
-            <section id="submitBtn">
-                <div>
-                <label for="Create Account">Create Account</label>
-                <input type="submit" id="createAcnt" name="createAcnt">
-            </div>
-            </section>
-        </fieldset>
-        </form>
+        <div id="footer">
+            <p>Already have an account? <a href="#" id="sign-in-btn">Sign In</a></p>
         </div>
-        <p id="bottomP">Already have an account? <a href="#">Sign in</a></p>
-    </div>
-  
+</form>
+
+
 </div>
 
-    
 </body>
 </html>

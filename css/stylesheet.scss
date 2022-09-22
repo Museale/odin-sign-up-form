@@ -1,0 +1,24 @@
+@import "./variables";
+@import "./buttons";
+@import "./images";
+@import "./inputfields";
+@import "./mixins";
+@import "./headers";
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 400;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+a:hover {
+    color: rgb(54, 68, 68);
+}
+

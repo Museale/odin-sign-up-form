@@ -1,0 +1,45 @@
+.image {
+    width: 37vw;
+    height: 100vh;
+    background-image:url(./NGC3576_Willocks_960.jpg);
+    background-repeat:repeat;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(68, 53, 32, 0.336);
+    margin-top: 200px;
+    
+}
+
+.svg-logo {
+    width: 40%;
+    filter: drop-shadow(8px 8px 2px black);
+}
+
+
+@media screen and(max-width: 1000px) {
+    .image {
+       visibility: collapse;
+       width: 0px;
+       padding: 0;
+       margin: 0;
+    }
+
+    body {
+        background-image: url(./NGC3576_Willocks_960.jpg);
+        width: 100%;
+    }
+
+    #flex-container {
+        background-color: rgba(7, 107, 138, 0.24);
+        color:white;
+        margin-left: auto;
+    }
+
+
+}
+

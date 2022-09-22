@@ -1,0 +1,55 @@
+
+#flex-container {
+    @include flex-center;
+    @include flex-clm-wrap;
+    width: 57vw;
+    padding: 3rem;
+}
+
+form {
+    @include flex-clm-wrap;
+}
+
+
+.input {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+ 
+}
+
+form input, label {
+    padding: 5px;
+    width: 15rem;
+font-size: 20px;
+
+}
+
+
+input, label {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+    width: 100%;
+
+}
+input, label:nth-child(odd) {
+    margin-right: 2.4rem;
+
+}
+
+input:invalid {
+    outline: $secondary-color;
+    border: 2px $secondary-color solid;
+ 
+}
+
+input:valid {
+    outline: none;
+    border: 2px solid rgb(120, 255, 120);
+
+
+}
+

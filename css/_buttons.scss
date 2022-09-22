@@ -1,0 +1,23 @@
+label[for="submit-btn"] {
+    visibility: hidden;
+}
+
+#submit-btn {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    appearance: none;
+    padding: 15px;
+    border: 2px solid $primary-color;
+    border-radius: 55px;
+    background-color: $secondary-color;
+    color: white;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    @include scale;
+}
+
+
+
