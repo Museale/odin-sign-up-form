@@ -5,12 +5,12 @@ function onChange () {
 
     if (password.value === confirmPassword.value) {
      confirmPassword.setCustomValidity = '';
-     confirmPassword.style.border='2px solid green';
+     confirmPassword.style.border='1px solid rgb(120, 255, 120)';
    
     } 
     else {
         confirmPassword.setCustomValidity = 'Passwords do not match';
-        confirmPassword.style.border='2px solid red';
+        confirmPassword.style.border='1px solid rgb(230, 111, 75)';
     } 
 
     }
